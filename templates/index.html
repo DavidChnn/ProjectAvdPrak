@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1A.0">
+    <title>NB Analysis Form</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <h1>NB Analysis Form</h1>
+    <form action="/analyze" method="post">
+        <label for="gadget_hiburan">Gadget Hiburan:</label>
+        <input type="text" name="gadget_hiburan" id="gadget_hiburan" required><br>
+        <label for="gadget_studi">Gadget Studi:</label>
+        <input type="text" name="gadget_studi" id="gadget_studi" required><br>
+        <label for="durasi_belajar">durasi belajar:</label>
+        <input type="text" name="durasi_belajar" id="durasi_belajar" required><br>
+        <label for="jumlah_aktivitas_sosial">jumlah_aktivitas_sosial:</label>
+        <input type="text" name="jumlah_aktivitas_sosial" id="jumlah_aktivitas_sosial" required><br>
+        <label for="IPK">IPK:</label>
+        <input type="text" name="IPK" id="IPK" required><br>
+
+
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

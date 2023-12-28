@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div>
+        <h1>Analysis Result</h1>
+        <p>Prediksi dari data yang di input:</p>
+        
+        {% if prediction == 1 %}
+            <p class="impact">{{ prediction }} atau Berpengaruh</p>
+        {% else %}
+            <p class="no-impact">{{ prediction }} atau Tidak Berpengaruh</p>
+        {% endif %}
+    </div>
+
+    <!-- result.html -->
+    <div>
+        <h1>Summary Data</h1>
+        <p>Gadget Hiburan: {{ gadget_hiburan }}</p>
+        <p>Gadget Studi: {{ gadget_studi }}</p>
+        <p>durasi_belajar: {{ durasi_belajar }}</p>
+        <p>jumlah_aktivitas_sosial: {{ jumlah_aktivitas_sosial }}</p>
+        <p>IPK: {{ IPK }}</p>
+        <!-- sisanya sama -->
+    </div>
+
+
+    <!-- <div>
+        <h2>Summary Data</h2>
+        <p>Gadget Hiburan: {{ gadget_hiburan }}</p>
+        <p>Gadget Studi: {{ gadget_studi }}</p>
+        <p>Durasi Belajar: {{ durasi_belajar }}</p>
+        <p>Jumlah Aktivitas Sosial: {{ jumlah_aktivitas_sosial }}</p>
+        <p>IPK: {{ IPK }}</p>
+        <p>Prediksi dari data yang diinput: {{ prediction }}</p>
+    </div> -->
+</body>
+</html>
